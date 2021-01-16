@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Precautions">
+
+    <TextView
+        android:id="@+id/txtPrecautions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:background="@color/SDL"
+        android:fontFamily="@font/playfair_display"
+        android:gravity="center"
+        android:text="PRECAUTIONS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txtPrecautions"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:weightSum="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:id="@+id/mask">
+
+                 <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_mask" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Make wearing a mask a normal part of being around other people. •	Make sure it covers both your nose, mouth and chin."
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:weightSum="2"
+                android:layout_below="@id/mask"
+                android:orientation="horizontal"
+                android:id="@+id/hands"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_hands" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water."
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:weightSum="2"
+                android:layout_below="@id/hands"
+                android:orientation="horizontal"
+                android:id="@+id/avoids"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_eyes_mouth" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Avoid touching your eyes, nose and mouth. Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:weightSum="2"
+                android:layout_below="@id/avoids"
+                android:orientation="horizontal"
+                android:id="@+id/distancing"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_distancing" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Maintain at least a 1-metre distance between yourself and others to reduce your risk of infection when they cough, sneeze or speak. "
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:weightSum="2"
+                android:layout_below="@id/distancing"
+                android:orientation="horizontal"
+                android:id="@+id/three_c"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_three_c" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Avoid the 3Cs: spaces that are closed, crowded or involve close contact."
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:weightSum="2"
+                android:layout_below="@id/three_c"
+                android:orientation="horizontal"
+                android:id="@+id/clean"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_clean" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Clean and disinfect surfaces frequently especially those which are regularly touched, such as door handles, faucets and phone screens."
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:weightSum="2"
+                android:layout_below="@id/clean"
+                android:orientation="horizontal"
+                android:id="@+id/symptoms"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_symptoms" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Know the full range of symptoms of COVID-19. The most common symptoms of COVID-19 are fever, dry cough, and tiredness."
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:weightSum="2"
+                android:layout_below="@id/symptoms"
+                android:orientation="horizontal"
+                android:id="@+id/isolation"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_isolation" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Stay home and self-isolate even if you have minor symptoms such as cough, headache, mild fever, until you recover."
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/who1"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/who2"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/who3"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/who4"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

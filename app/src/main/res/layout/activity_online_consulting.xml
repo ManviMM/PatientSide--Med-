@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_background"
+    tools:context=".OnlineConsulting">
+
+    <LinearLayout
+        android:id="@+id/txtOnlineConsultation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SDL"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:height="70dp"
+            android:fontFamily="@font/playfair_display"
+            android:gravity="center"
+            android:text="ONLINE CONSULTING"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtOnlineConsultation"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+
+</RelativeLayout>

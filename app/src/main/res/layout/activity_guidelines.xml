@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guidelines">
+
+    <TextView
+        android:id="@+id/txtGuidelines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:background="@color/SDL"
+        android:fontFamily="@font/playfair_display"
+        android:gravity="center"
+        android:text="GUIDELINES"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtGuidelines">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtGuidelines"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtHospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOSPITAL RULES TO BE FOLLOWED :-"
+                android:textColor="@color/text"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtHospitalRules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="10dp" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:useWebUi="true"
+                app:handleNetworkEvents="true"
+                app:showVideoDuration="true"
+                app:videoId="1APwq1df6Mw"/>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:showYouTubeButton="false"
+                app:useWebUi="true"
+                app:handleNetworkEvents="true"
+                app:showVideoDuration="true"
+                app:videoId="677pSwGauqs" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

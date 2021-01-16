@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CovidRelated">
+
+    <TextView
+        android:id="@+id/txtCovidRelated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00B894"
+        android:fontFamily="@font/playfair_display"
+        android:text="Covid Related"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="45dp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtCovidRelated"
+        android:fontFamily="@font/lato"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00B894"
+                android:text="Nearby Hospitals"
+                android:textAllCaps="false"
+                android:textSize="23dp" />
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00B894"
+                android:text="Beds Available"
+                android:textAllCaps="false"
+                android:textSize="24dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linearLayout1"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00B894"
+                android:text="Nearby Medicals "
+                android:textAllCaps="false"
+                android:textSize="24dp" />
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00B894"
+                android:text="Test centers"
+                android:textAllCaps="false"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
